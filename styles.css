@@ -3,7 +3,7 @@ html {
 }
 
 :root {
-    /* Font Stack */
+  /* Font Stack */
   --font-family-base: Helvetica, Inter, Arial, system-ui, sans-serif;
   
   /* Modular Scale */
