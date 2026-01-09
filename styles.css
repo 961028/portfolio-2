@@ -114,12 +114,13 @@ a:active {
 
 img {
   width: var(--content-width-wide);
-  max-width: calc(100vw - var(--space-xl));
-  margin-left: 50%;
+  max-width: calc(100vw - var(--space-sm) * 2);
+  position: relative;
+  left: 50%;
   transform: translateX(-50%);
-  display: block;
   margin-top: var(--space-xl);
   margin-bottom: var(--space-xl);
+  display: block;
   height: auto;
   border-radius: var(--radius-md);
   border: var(--border-thin);
