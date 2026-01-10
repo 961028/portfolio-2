@@ -28,7 +28,7 @@ html {
   --space-2xl: 8rem;
   
   /* Content Width */
-  --content-width-base: 52ch;
+  --content-width-base: 48ch;
   --content-width-wide: 80ch;
   
   /* Border Radius */
