@@ -4,7 +4,7 @@ html {
 
 :root {
   /* Font Stack */
-  --font-family-base: Helvetica, Inter, Arial, system-ui, sans-serif;
+  --font-family-base: Inter, Arial, system-ui, sans-serif;
   
   /* Modular Scale */
   --ratio: 1.414;
@@ -20,7 +20,7 @@ html {
   --lh-display: 1.15;
   
   /* Spacing Scale */
-  --space-xs: 0.5rem;
+  --space-xs: 1rem;
   --space-sm: 0.75rem;
   --space-md: 1.5rem;
   --space-lg: 2.5rem;
@@ -28,11 +28,11 @@ html {
   --space-2xl: 8rem;
   
   /* Content Width */
-  --content-width-base: 48ch;
-  --content-width-wide: 80ch;
+  --content-width-base: 40ch;
+  --content-width-wide: 60ch;
   
   /* Border Radius */
-  --radius-md: 20px;
+  --radius-md: 2rem;
   
   /* Colors */
   --color-background: #fafafa;
