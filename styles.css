@@ -58,6 +58,7 @@ body {
   font-family: var(--font-family-base);
   text-wrap: pretty;
   margin: 0;
+  cursor: url('cursor/default.png') 0 0, auto;
 }
 
 small {
@@ -119,6 +120,7 @@ a,
 a:visited,
 a:active {
   color: var(--color-link);
+  cursor: url('cursor/clickable.png') 0 0, pointer;
 }
 
 a:hover {
