@@ -139,6 +139,7 @@ a:hover {
   margin-top: var(--space-lg);
   display: block;
   border-radius: var(--radius-md);
+  box-shadow: 0 0 1px #24242442;
 }
 
 /* Hero image: remove top margin on its frame */
