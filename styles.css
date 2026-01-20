@@ -95,11 +95,18 @@ h1 {
   display: block;
   width: var(--logo-size);
   height: auto;
-  color: var(--color-text);
   position: fixed;
   top: var(--space-sm);
   right: var(--space-sm);
   z-index: 10;
+}
+
+.eh-logo .logo-dark {
+  fill: var(--color-link);
+}
+
+.eh-logo .logo-light {
+  fill: var(--color-background);
 }
 
 /* Reset intrinsic margins */
