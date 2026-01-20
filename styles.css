@@ -46,6 +46,9 @@ html {
   
   /* Opacity */
   --opacity-muted: 0.6;
+
+  /* Logo */
+  --logo-size: 2.5rem;
 }
 
 .title {
@@ -85,6 +88,14 @@ h1 {
   max-width: var(--content-width-base);
   margin: var(--space-xl) auto;
   padding: var(--space-lg);
+}
+
+.eh-logo {
+  display: block;
+  width: var(--logo-size);
+  height: auto;
+  margin-bottom: var(--space-sm);
+  color: var(--color-text);
 }
 
 /* Reset intrinsic margins */
@@ -162,8 +173,8 @@ a:hover {
   position: absolute;
   inset: 0;
   border-radius: inherit;
-  border: 1px solid #ffffff42;
-  mix-blend-mode: plus-lighter;
+  border: 1px solid #ffffff64;
+  mix-blend-mode: screen;
   pointer-events: none;
 }
 
