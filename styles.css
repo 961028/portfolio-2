@@ -212,6 +212,7 @@ a:hover {
   opacity: var(--opacity-muted);
   margin-top: var(--space-md);
   display: block;
+  text-wrap: balance;
 }
 
 .back-link {
