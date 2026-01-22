@@ -211,3 +211,8 @@ a:hover {
   margin-top: var(--space-md);
   display: block;
 }
+
+.back-link {
+  margin-top: var(--space-lg);
+  text-align: center;
+}
