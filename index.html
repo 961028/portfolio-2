@@ -99,59 +99,6 @@
     <p><a href="mailto:emil.holmsten@live.se">emil.holmsten@live.se</a></p>
     <p><a href="tel:+46707829333">+46 70 782 93 33</a></p>
   </div>
-
-  <script>
-    // Logo hover theme toggle
-    window.addEventListener('DOMContentLoaded', function () {
-      const logo = document.querySelector('.eh-logo');
-      if (!logo) return;
-
-      const body = document.body;
-
-      function enableAltTheme() {
-        body.classList.add('theme-alt');
-      }
-
-      function disableAltTheme() {
-        body.classList.remove('theme-alt');
-      }
-
-      logo.addEventListener('mouseenter', enableAltTheme);
-      logo.addEventListener('mouseleave', disableAltTheme);
-    });
-
-    // Preload images after page load
-    window.addEventListener('load', function () {
-      const imagesToPreload = [
-        'images/apotek-hero.png',
-        'images/apotek-multi-situation.png',
-        'images/mattecentrum-hero.png',
-        'images/mattecentrum-old.png',
-        'images/mattecentrum-wireframe.png',
-        'images/zalando-landing-1.png',
-        'images/zalando-old.png',
-        'images/zalando-landing-full.png'
-      ];
-
-      imagesToPreload.forEach(function (src) {
-        const img = new Image();
-        img.src = src;
-      });
-
-      const solaceImagesToPreload = [
-        'temp-images/Start.png',
-        'temp-images/Start-1.png',
-        'temp-images/Start-2.png',
-        'temp-images/Start-3.png',
-        'temp-images/Start-4.png'
-      ];
-
-      solaceImagesToPreload.forEach(function (src) {
-        const img = new Image();
-        img.src = src;
-      });
-    });
-  </script>
 </body>
 
 </html>
