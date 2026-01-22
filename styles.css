@@ -6,7 +6,7 @@ html {
 :root {
   /* Font Stack */
   --font-family-base: Inter, Arial, system-ui, sans-serif;
-  
+
   /* Modular Scale */
   --ratio: 1.414;
 
@@ -14,12 +14,12 @@ html {
   --step-1: calc(var(--step-0) * var(--ratio));
   --step-2: calc(var(--step-1) * var(--ratio));
   --step-small: calc(var(--step-0) / var(--ratio));
-  
+
   /* Line Heights */
   --lh-body: 1.5;
   --lh-small: 1.4;
   --lh-display: 1.15;
-  
+
   /* Spacing Scale */
   --space-xs: 1rem;
   --space-sm: 0.75rem;
@@ -27,26 +27,26 @@ html {
   --space-lg: 2.5rem;
   --space-xl: 4rem;
   --space-2xl: 8rem;
-  
+
   /* Content Width */
   --content-width-base: 40ch;
   --content-width-wide: 60ch;
-  
+
   /* Border Radius */
   --radius-md: 1rem;
-  
+
   /* Colors */
   --color-background: #F9F7F1;
   --color-text: #252523;
   --color-link: #2149B5;
   --color-shadow: #25252342;
-  
+
   /* Alternate Theme Colors */
   --color-background-alt: #2149B5;
   --color-text-alt: #F9F7F1;
   --color-link-alt: #F9F7F1;
   --color-shadow-alt: #25252342;
-  
+
   /* Opacity */
   --opacity-muted: 0.6;
 
@@ -121,35 +121,35 @@ h1 {
 }
 
 /* Reset intrinsic margins */
-.flow > * {
+.flow>* {
   margin: 0;
 }
 
 /* Vertical rhythm to change all spacing */
-.flow > * + * {
+.flow>*+* {
   margin-top: var(--space-sm);
 }
 
 /* Tighter spacing after headings */
-.flow h1 + p,
-.flow h2 + p {
+.flow h1+p,
+.flow h2+p {
   margin-top: var(--space-xs);
 }
 
 /* Extra space before major headings */
-.flow > h1,
-.flow > h2,
-.flow > h3 {
+.flow>h1,
+.flow>h2,
+.flow>h3 {
   margin-top: var(--space-md);
 }
 
 /* Extra space between image-description and next element */
-.flow .image-description + * {
+.flow .image-description+* {
   margin-top: var(--space-md);
 }
 
 /* Lists */
-.flow > ul {
+.flow>ul {
   padding-left: var(--space-md);
   line-height: var(--lh-body);
 }
@@ -186,7 +186,7 @@ a:hover {
 }
 
 /* Image inside the frame */
-.flow .image-frame > img {
+.flow .image-frame>img {
   display: block;
   width: 100%;
   height: auto;

@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emil Holmsten - Portfolio</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emil Holmsten - Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <div class="flow">
-    <svg class="eh-logo" width="35" height="27" viewBox="0 0 35 27" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="EH logo">
+    <svg class="eh-logo" width="35" height="27" viewBox="0 0 35 27" xmlns="http://www.w3.org/2000/svg" role="img"
+      aria-label="EH logo">
       <g clip-path="url(#clip0_14_569)">
         <rect class="logo-light" width="35" height="27" />
         <rect class="logo-dark" x="2" y="2" width="15" height="1" />
@@ -60,10 +63,11 @@
         </clipPath>
       </defs>
     </svg>
-    
+
     <h1 class="title">Emil Holmsten</h1>
     <p><strong>Designer · Strategist · Engineer</strong></p>
-    <p>I like connecting dots, shaping direction, and crafting experiences out of ideas. I have a problem solving mentality and an IT engineering background.</p>
+    <p>I like connecting dots, shaping direction, and crafting experiences out of ideas. I have a problem solving
+      mentality and an IT engineering background.</p>
 
     <h2>Recent Projects</h2>
     <p>
@@ -75,7 +79,7 @@
       Concept exploring how physical presence can drive digital self-care behavior.
     </p>
     <p>
-      <a href="zalando.html">Zalando Refresh</a><br> 
+      <a href="zalando.html">Zalando Refresh</a><br>
       Landing page redesign focused on first-time user orientation and exploration.
     </p>
     <p>
@@ -83,13 +87,13 @@
       Ongoing complete redesign focused on information architecture, content clarity, and student-first guidance.
     </p>
 
-        <h2>Primary Skills</h2>
+    <h2>Primary Skills</h2>
     <ul>
-        <li>Problem Framing</li>
-        <li>Concept Development</li>
-        <li>AI/Code/Figma Prototyping</li>
+      <li>Problem Framing</li>
+      <li>Concept Development</li>
+      <li>AI/Code/Figma Prototyping</li>
     </ul>
-    
+
     <h2>Contact</h2>
     <p><a href="https://www.linkedin.com/in/emil-holmsten-080469100/">linkedin.com/emil-holmsten</a></p>
     <p><a href="mailto:emil.holmsten@live.se">emil.holmsten@live.se</a></p>
@@ -98,7 +102,7 @@
 
   <script>
     // Logo hover theme toggle
-    window.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('DOMContentLoaded', function () {
       const logo = document.querySelector('.eh-logo');
       if (!logo) return;
 
@@ -117,7 +121,7 @@
     });
 
     // Preload images after page load
-    window.addEventListener('load', function() {
+    window.addEventListener('load', function () {
       const imagesToPreload = [
         'images/apotek-hero.png',
         'images/apotek-multi-situation.png',
@@ -129,7 +133,7 @@
         'images/zalando-landing-full.png'
       ];
 
-      imagesToPreload.forEach(function(src) {
+      imagesToPreload.forEach(function (src) {
         const img = new Image();
         img.src = src;
       });
@@ -142,11 +146,12 @@
         'temp-images/Start-4.png'
       ];
 
-      solaceImagesToPreload.forEach(function(src) {
+      solaceImagesToPreload.forEach(function (src) {
         const img = new Image();
         img.src = src;
       });
     });
   </script>
 </body>
+
 </html>
