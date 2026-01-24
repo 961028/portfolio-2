@@ -82,19 +82,20 @@
       clarity, focus, and reduced mental effort.
     </p>
     <p>
-      <a href="apotekhjartat.html"
+      <a href="apotekhjartat.html" class="project-title"
         style="view-transition-name: apotekhjartat;">Apotek Hjärtat Mini</a><br>
       Concept exploring how physical presence can drive digital self-care
       behavior.
     </p>
     <p>
-      <a href="zalando.html" style="view-transition-name: zalando;">Zalando
+      <a href="zalando.html" class="project-title"
+        style="view-transition-name: zalando;">Zalando
         Refresh</a><br>
       Landing page redesign focused on first-time user orientation and
       exploration.
     </p>
     <p>
-      <a href="mattecentrum.html"
+      <a href="mattecentrum.html" class="project-title"
         style="view-transition-name: mattecentrum;">Mattecentrum
         Overhaul</a><br>
       Ongoing complete redesign focused on information architecture, content
@@ -115,6 +116,23 @@
     <p><a href="mailto:emil.holmsten@live.se">emil.holmsten@live.se</a></p>
     <p><a href="tel:+46707829333">+46 70 782 93 33</a></p>
   </div>
+
+  <script>
+    document.addEventListener("click", (e) => {
+      const link = e.target.closest("a");
+      if (!link) return;
+
+      let title = null;
+      if (link.classList && link.classList.contains("project-title")) {
+        title = link;
+      } else {
+        title = link.querySelector(".project-title");
+      }
+      if (!title) return;
+
+      title.classList.add("is-transitioning");
+    });
+  </script>
 </body>
 
 </html>

@@ -42,12 +42,6 @@ html {
   --color-link: #2149B5;
   --color-shadow: #25252342;
 
-  /* Alternate Theme Colors */
-  --color-background-alt: #2149B5;
-  --color-text-alt: #F9F7F1;
-  --color-link-alt: #F9F7F1;
-  --color-shadow-alt: #25252342;
-
   /* Opacity */
   --opacity-muted: 0.6;
 
@@ -85,7 +79,7 @@ h2 {
 
 h1 {
   font-size: var(--step-2);
-  line-height: var(--lh-display);
+  line-height: var(--lh-body);
   font-weight: 700;
 }
 
@@ -124,16 +118,18 @@ h1 {
 }
 
 a,
-a:visited,
-a:active {
+a:visited {
   color: var(--color-link);
   cursor: url('cursor/pointer@1x.svg') 6 0, pointer;
   cursor: -webkit-image-set(url('cursor/pointer@2x.svg') 2x) 6 0, pointer;
+  text-decoration: none;
 }
 
 a:hover {
-  background-color: var(--color-link);
-  color: var(--color-background);
+  text-decoration: underline;
+}
+
+a:active {
   text-decoration: none;
 }
 
@@ -160,21 +156,6 @@ h2.main-subtitle {
   display: block;
   border-radius: var(--radius-md);
   box-shadow: 0 0 1px var(--color-shadow);
-  opacity: 1;
-  animation-name: fadeInOpacity;
-  animation-iteration-count: 1;
-  animation-timing-function: ease-in-out;
-  animation-duration: 0.3s;
-}
-
-@keyframes fadeInOpacity {
-  0% {
-    opacity: 0;
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
 
 /* Hero image: remove top margin on its frame */
@@ -232,11 +213,45 @@ h2.main-subtitle {
   text-align: center;
 }
 
+/* https://jakearchibald.com/2024/view-transitions-handling-aspect-ratio-changes/ */
+
 @view-transition {
   navigation: auto;
 }
 
-@keyframes fade-out {
+.project-title {
+  display: inline-block;
+  width: fit-content;
+  transform-origin: left center;
+}
+
+.project-title.is-transitioning {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+:root::view-transition-group(*) {
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+}
+
+::view-transition-old(solace),
+::view-transition-old(apotekhjartat),
+::view-transition-old(zalando),
+::view-transition-old(mattecentrum) {
+  animation: fade 0.2s linear forwards;
+  height: 100%;
+}
+
+::view-transition-new(solace),
+::view-transition-new(apotekhjartat),
+::view-transition-new(zalando),
+::view-transition-new(mattecentrum) {
+  animation: fade 0.2s linear reverse;
+  height: 100%;
+}
+
+@keyframes fade {
   from {
     opacity: 1;
   }
@@ -246,20 +261,9 @@ h2.main-subtitle {
   }
 }
 
-@keyframes fade-in {
-  from {
-    opacity: 0;
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0s !important;
+    transition-duration: 0s !important;
   }
-
-  to {
-    opacity: 1;
-  }
-}
-
-::view-transition-old(project-title) {
-  animation: fade-out 2s ease-in-out both;
-}
-
-::view-transition-new(project-title) {
-  animation: fade-in 2s ease-in-out both;
 }
